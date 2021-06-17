@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+        <title>Document</title>
+
+        <style>
+
+        body{
+         margin: 0;
+         padding: 0;
+         font-family: sans-serif;
+         background: #34495e;
+         
+         color:#2ecc71;
+        }
+        .box1{
+                text-align: center;
+                padding-top:4rem;
+        }
+        </style>
+</head>
+<body>
+        <form  class="box1" action="/sendmail" method="POST"  >
+   
+                <h2><strong>Welcome </strong> {{ username }}</h2>
+                
+                <br>
+                <h3><pre>  Choose the file   :  <input type="file" name="datacsv"  > </pre></h3>
+                
+        
+                <br>
+                
+                <input type="submit" value="submit csv">
+           
+        </form> 
+</body>
+</html>
